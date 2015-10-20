@@ -1,2 +1,4 @@
-# measure_speed
-use phonegap
+#开发工具
+phonegap
+
+#功能
