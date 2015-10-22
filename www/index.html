@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <title>测速</title>
+    <link rel="stylesheet" href="css/lib/jquery.mobile-1.4.5.min.css"/>
+	<link rel="stylesheet" href="css/index.css"/>
+</head>
+
+<body>
+
+<div data-role="page" id="index">
+
+    <div data-role="header" data-position="fixed">
+        <h1>测速</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <div id="myContent">
+            <label>当前速度:50km/h</label>
+            <label>设置的最高速度:80km/h</label>
+            <input type="button" value="设置最高速度" id="set_speed">
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h1>&copy2015-2016</h1>
+    </div>
+</div>
+
+<div data-role="page" id="detail">
+
+    <div data-role="header" data-position="fixed">
+        <h1>测速</h1>
+    </div>
+
+    <div role="main" class="ui-content">
+        <form>
+            <div class="ui-field-contain">
+            <label for="highest_speed">最高速度(km/h):</label>
+            <input type="number" name="highest_speed" id="highest_speed">
+
+            </div>
+        </form>
+        <div id="btnDiv">
+            <a class="ui-btn ui-corner-all ui-btn-inline" id="saveBtn" >保存</a>
+            <a href="#" class="ui-btn ui-corner-all ui-btn-inline" data-rel="back" >返回</a>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <h1>&copy2015-2016</h1>
+    </div>
+</div>
+
+<script src="cordova.js"></script>
+<script src="js/lib/jquery-1.11.1.min.js"></script>
+<script src="js/lib/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
