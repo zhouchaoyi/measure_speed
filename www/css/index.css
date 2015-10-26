@@ -1,4 +1,6 @@
 #myContent {text-align:center;margin-top: 50px}
 .ui-input-btn input {background:blue;}
 #btnDiv {text-align:center;}
-.ui-content label {font-size: 20px}
+.ui-content div {font-size: 20px}
+.ui-content #divHighSpeed {display: none}
+.ui-content #divAlert {display: none;color:red;font-size:30px;}
